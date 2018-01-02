@@ -4,15 +4,18 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #A7CDCC !default;
-$brand-secondary: #1fb5f6 !default; 
-
+$brand-red: #C00;
+$brand-primary: $brand-red  !default;
+$brand-secondary: #A7CDCC !default; 
+$brand-tertiary: #1fb5f6 !default;
 $brand-white: #fff;
 $brand-black: #000;
 $brand-lighter: #727272;
 $brand-selection-color: #b7c2c2;
 $brand-body-color: #fcfcfc;
 $brand-body-bg: #f9f7f7;
+
+
 
 
 $input-border-focus: $brand-primary !default;
@@ -182,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transform: scale(1.0);
 	-o-transform: scale(1.0);
 	transform: scale(1.0);
-	background: $brand-white;
+    background-color: $brand-body-color;
 	.menu-show & {
 		-webkit-transform: scale(0.9);
 		-moz-transform: scale(0.9);
@@ -342,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 // Header START
 header{
 	padding: 0.5em 0;
-    background-color: #C00;
+    background-color: $brand-red;
 	@media screen and (max-width: $screen-sm) {
 		padding: 1em 0;
 	}
@@ -479,9 +482,10 @@ header{
 #fh5co-services-section, #fh5co-contact-section,
 #fh5co-team-section{
 	padding-bottom: 5em;
+    padding-top: 5em;
 }
 #fh5co-intro-section{
-	margin-bottom: 15em;
+	margin-bottom: 8em;
 	padding-bottom: 3em;
 	// border-bottom: 1px solid rgba($brand-black,.06);
 }

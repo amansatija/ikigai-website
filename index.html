@@ -27,7 +27,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-	
+        
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -37,7 +37,8 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-
+    <!-- Parallax JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>    
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -57,15 +58,19 @@
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="services_production.html">Production Services</a></li>
 					<li><a href="services_shooting.html">Shooting Services</a></li>
-					<li><a href="team.html">Team</a></li>
+<!--					<li><a href="team.html">Team</a></li>-->
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	
-	<div id="fh5co-page">
-		<header>
+	<div id="fh5co-page" style="background-color: #000;
+    background-image: url(//localhost/projects/credibleinc/ikigai/workspace/ikigai-website/images/img_studio3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; ">
+		<header style="background-color: transparent">
 			<div class="container">
 				<div class="fh5co-navbar-brand">
 					<a class="fh5co-logo" href="index.html">Ikigai</a>
@@ -74,12 +79,18 @@
 				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 			</div>
 		</header>
-		<div id="fh5co-intro-section">
+		<div id="fh5co-intro-section" >
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 animate-box">
-						<h2 class="intro-heading">We Create Cool Things .</h2>
-						<p><span>For the  <i class="icon-heart3"></i> of cinema.</span></p>
+                        <div data-relative-input="true" id="scene">
+                            <div data-depth="0.2">
+                                <h2 class="intro-heading" style="color: #fff" >We Create Cool Things .</h2>
+                                <p><span style="color: #fff">For the  <i class="icon-heart3"></i> of cinema.</span></p>
+                            </div>
+                        </div>
+                        
+                        
 					</div>
 				</div>
 			</div>
@@ -293,9 +304,9 @@
 						</div>
 						<div class="col-md-6 social-text-align">
 							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter-with-circle"></i></a>
+<!--								<a href="#"><i class="icon-twitter-with-circle"></i></a>-->
 								<a href="#"><i class="icon-facebook-with-circle"></i></a>
-								<a href="#"><i class="icon-instagram-with-circle"></i></a>
+<!--								<a href="#"><i class="icon-instagram-with-circle"></i></a>-->
 							</p>
 						</div>
 					</div>
@@ -320,6 +331,10 @@
 	<script src="js/main.js"></script>
 
 	<script type="text/javascript">
+        
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+    
 	$(function () {
 		
 		var filterList = {
