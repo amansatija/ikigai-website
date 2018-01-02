@@ -341,20 +341,21 @@ h1, h2, h3, h4, h5, h6 {
 
 // Header START
 header{
-	padding: 4em 0;
+	padding: 0.5em 0;
+    background-color: #C00;
 	@media screen and (max-width: $screen-sm) {
-		padding: 2em 0;
+		padding: 1em 0;
 	}
 	.fh5co-navbar-brand{
 		float: left;
 		.fh5co-logo{
 			font-size: 35px;
 			text-transform: uppercase;
-			color: $brand-black;
+			color: $brand-white;
 			font-weight: 300;
 			&:hover{
 				text-decoration: none !important;
-				color: $brand-black !important;
+				color: $brand-white !important;
 			}
 			&:active, &:focus {
 				outline: none;
@@ -390,11 +391,11 @@ header{
 	  @include inline-block;
 	  width: 30px;
 	  height: 2px;
-	  color: $brand-black;
+	  color: $brand-white;
 	  font:bold 14px/.4 Helvetica;
 	  text-transform: uppercase;
 	  text-indent:-55px;
-	  background: $brand-black;
+	  background: $brand-white;
 	  transition: all .2s ease-out;
 	  .menu-show & {
 			background: $brand-white;
@@ -404,7 +405,7 @@ header{
 	  	  content:'';
 		  width: 30px;
 		  height: 2px;
-		  background: $brand-black;
+		  background: $brand-white;
 		  position: absolute;
 		  left:0;
 		  .menu-show & {
@@ -480,7 +481,7 @@ header{
 	padding-bottom: 5em;
 }
 #fh5co-intro-section{
-	margin-bottom: 4em;
+	margin-bottom: 15em;
 	padding-bottom: 3em;
 	// border-bottom: 1px solid rgba($brand-black,.06);
 }
@@ -760,7 +761,7 @@ input[type="text"] {
 // footerf
 #footer{
 	border-top: 1px solid rgba($brand-black,.06);
-	padding: 3em 0;
+	padding: 1em 0;
 	p{
 		font-size: 16px;
 		&:last-child {
