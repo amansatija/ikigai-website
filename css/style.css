@@ -22,6 +22,19 @@ body {
     height: 100%;
     width: 100%; }
 
+.holder-section {
+  margin-top: 2em; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.fullscreen-bg1 {
+  background: url(/images/img_studio4.gif) no-repeat center center fixed;
+  background-size: cover; }
+
 #fh5co-wrapper {
   height: 100%;
   width: 100%;
